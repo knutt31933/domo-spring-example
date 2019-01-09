@@ -20,6 +20,7 @@ public class AppController {
 
 	@RequestMapping(method=RequestMethod.GET, value="/app")
 	public ModelAndView app() {
+		//controler
 		ModelAndView v = new ModelAndView();
 		List<Webboard> wbList = atwwrp.findAll();
 		v.addObject("attname", wbList);
