@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+table, td, th {border: 1px solid black;}
+table {border-collapse: collapse;width: 60%;}
+th {height: 30px;}
+
+</style>
+</head>
+<body>
+
+	title :
+	<input type="text" name="title" id="title" />
+	<br> story :
+	<input type="text" name="story" id="story" />
+	<br>
+
+
+
+	<button onclick="btnclick()">click</button>
+	<br>
+
+
+	<fieldset>
+		<legend>insert</legend>
+		author:<input type="text" id="inauthor" /><br>
+		<br> title:<input type="text" id="intitle" /><br>
+		<br> story:<input type="text" id="instory" /><br>
+		<br> <br>
+		<button onclick="addWebboard()">Insert</button>
+	</fieldset>
+	<fieldset>
+		<legend>Show By Custom</legend>
+
+		title : <input type="text" id="puttitle" /><br> story : <input
+			type="text" id="teststory" /><br> author : <input type="text"
+			id="testauthor" /><br>
+
+		<button onclick="custom()">submit</button>
+
+		<table id="tb">
+			<tbody>
+				<tr class="child">
+					<td></td>
+
+				</tr>
+			</tbody>
+		</table>
+
+	</fieldset>
+
+
+	<fieldset>
+		<legend>Show All</legend>
+		<div style="margin-top: 40px">
+		<table id="tb2">
+
+			<thead>
+				<tr style="background-color: #E0E0E">
+					<th>Title.</th>
+					<th>Story</th>
+					<th>Author</th>
+					<th>isActive</th>
+					<th>CreateDate</th>
+					<th>CreateBy</th>
+					<th>UpdateDate</th>
+					<th>UpdateBy</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+				<tr class="child2">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+
+	</fieldset>
+	<br>
+	<br>
+
+
+
+
+	<script type="text/javascript" src="appjs/testjs.js"></script>
+
+
+
+</body>
+</html>
